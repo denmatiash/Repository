@@ -1,116 +1,131 @@
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  h1 {
-    margin: 0;
-  }
-  body{
-    background-color: aqua;
-  }
-  h1 {
-    font-size: 20px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  margin: 0;
+}
+body {
+  background-color: #60a631;
+}
+
+/* Стилі текстів */
+h1 {
+  font-size: 45px;
   line-height: 27px;
   color: #262626;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   display: flex;
-    width: 100%;
-    justify-content: center;
-
-  }
-  p{
-    padding: 30px 30px 1px 30px;
-    display: flex;
-    width: 100%;
-    text-align: center;
-  }
-  .arrow-down {
-    margin: 30px;
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+p {
+  padding: 30px 30px 1px 30px;
+  display: flex;
+  width: 100%;
+  text-align: center;
+}
+/* На головну */
+.den-content-bottom-info__link:hover {
+  background-color: #233f1f;
+}
+.den-content-bottom-info__link:active {
+  position: relative;
+  top: 3px;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+}
+/* Картинки */
+.arrow-down {
+  margin: 30px;
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
 }
 .arrow-down span {
-    
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #337AB7;
-    border-right: 5px solid #337AB7;
-    transform: rotate(45deg);
-    margin: -16px;
-    animation: arrow-down 2s infinite;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #337ab7;
+  border-right: 5px solid #337ab7;
+  transform: rotate(45deg);
+  margin: -16px;
+  animation: arrow-down 2s infinite;
 }
-.arrow-down span:nth-child(2){
-    animation-delay: -0.2s;
+.arrow-down span:nth-child(2) {
+  animation-delay: -0.2s;
 }
-.arrow-down span:nth-child(3){
-    animation-delay: -0.4s;
+.arrow-down span:nth-child(3) {
+  animation-delay: -0.4s;
 }
 @keyframes arrow-down {
-    0%{
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px,-20px);
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform: rotate(45deg) translate(20px,20px);
-    }
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
 }
-  .wrapper {
-      display: flex;
-      /* width: 1220px;
+.wrapper {
+  display: flex;
+  /* width: 1220px;
       height: 800px; */
-      width: 100%;
-      justify-content: center;
-      margin-top: 55px;
-  }
-  .wrapper__card {
-    display: flex;
-    width: 300px;
-    height: 300px;
-    position: relative;
-    perspective: 1000px;
-    /* border: 1px solid #fff; */
-  }
-  .wrapper__front, .back {
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 1s;
-    backface-visibility: hidden;
-    background-color: aqua;
-   }
-  .wrapper__front img {
-    display: flex;
-    max-width: 100%;
-    min-width: 100%;
-    height: auto;
-  }
-  .back {
-    transform: rotateY(180deg);
-  }
-  .wrapper__card:hover .front {
-    transform: rotateY(180deg);}
-  .wrapper__card:hover .back {
-    transform: rotateY(360deg);}
-  /* Footer */
+  width: 100%;
+  justify-content: center;
+  margin-top: 55px;
+}
+.wrapper__card {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  perspective: 1000px;
+  /* border: 1px solid #fff; */
+}
+.wrapper__front,
+.back {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  background-color: #60a631;
+}
+.wrapper__front img {
+  display: flex;
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+}
+.back {
+  transform: rotateY(180deg);
+}
+.wrapper__card:hover .front {
+  transform: rotateY(180deg);
+}
+.wrapper__card:hover .back {
+  transform: rotateY(360deg);
+}
+/* Footer */
 footer {
-    color: black;
-    border: solid #e698d3;
-    background-color: #bdabf8;
-    width: 100%;
-    text-align: center;
-    
-    /* margin-bottom: 20px; */
-  }
+  color: black;
+  border: solid #e698d3;
+  background-color: #60a631;
+  width: 100%;
+  text-align: center;
+
+  /* margin-bottom: 20px; */
+}
