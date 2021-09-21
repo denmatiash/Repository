@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "GT America";
+  src: url("../fonts/GT\ America\ Bold.ttf") format("truetype"),
+    url("../fonts/GT\ America\ Bold\ Italic.ttf") format("truetype"),
+    url("../fonts/GT\ America\ Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Orpheus Pro";
+  src: url("../fonts/Orpheus\ Pro\ Regular.otf") format("opentype"),
+    url("../fonts/OrpheusPro\ Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  padding: 0;
+}
+
+body {
+  font-family: "GT America", sans serif;
+  background-color: #60a631;
+}
+/* Header */
+.c-header {
+  position: relative;
+  background-color: white;
+  box-shadow: 0 10px 10px rgba(57, 63, 72, 0.3);
+}
+/* Logo */
+.c-kharkova-logo__wrapper {
+  margin-left: 25px;
+}
+.e-kharkova-logo__icon {
+  width: 160px;
+  height: 60px;
+}
+
+[data-tooltip] {
+  position: relative; /* Относительное позиционирование */ 
+ }
+ [data-tooltip]::after {
+  content: attr(data-tooltip); /* Выводим текст */
+  position: absolute; /* Абсолютное позиционирование */
+  width: 300px; /* Ширина подсказки */
+  left: 0; top: 0; /* Положение подсказки */
+  background: #3989c9; /* Синий цвет фона */
+  color: #fff; /* Цвет текста */
+  padding: 0.5em; /* Поля вокруг текста */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Параметры тени */
+  pointer-events: none; /* Подсказка */
+  opacity: 0; /* Подсказка невидима */
+  transition: 1s; /* Время появления подсказки */
+ } 
+ [data-tooltip]:hover::after {
+  opacity: 1; /* Показываем подсказку */
+  top: 2em; /* Положение подсказки */
+ }
+
+ .c-navbar {
+   position: absolute;
+   top: 0;
+   right: 0;
+ }
+ .c-navbar__menu {
+   display: flex;
+   justify-content: space-between;
+   list-style-type: none;
+   
+ }
+
+ .c-navbar__menu a {
+  text-decoration: none;
+}
