@@ -147,7 +147,7 @@ body {
   line-height: 65px;
   color: white;
   z-index: 20;
-  top: 30%;
+  top: 18%;
   padding: 0 50px;
 }
 
@@ -170,25 +170,48 @@ body {
 
 .c-kharkova-social__links {
   position: absolute;
-  max-width: 740px;
+  max-width: 420px;
+  height: fit-content;
   margin: 0 auto;
   width: 100%;
-  bottom: 40%;
-  left: 21%;
+  bottom: 70px;
+  left: 35%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   z-index: 20;
 }
 
 .c-kharkova-social__item {
-  padding: 0 20px;
-  margin-bottom: 50px;
+ padding: 20px;
+  height: fit-content;
 }
 .c-kharkova-social__item img {
   width: 100px;
-  height: 30px;
+  height: 100px;
 }
 
 /* End of Kharkova section */
 /* ===================================================================================== */
+
+/* Footer */
+.c-footer {
+  background: rgb(12, 11, 11);
+  
+}
+
+.c-footer__wrapper {
+  padding: 20px;
+  color: #DDAB47;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.c-footer__logo {
+  font-family: 'Charm', cursive;
+  font-size: 35px;
+  line-height: 28px;
+}
