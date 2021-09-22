@@ -29,8 +29,225 @@
             Данный опрос предназначен для продвижения здорового питания и
             повышения разборчивости в потреблении пищи
           </p>
+          <!-- Form -->
+          <form class="c-kharkova-survey__form">
+            <div class="c-kharkova-form__group">
+              <label id="name-label" for="name">Имя</label>
+              <input
+                class="c-kharkova-form__item"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Ваше имя"
+                required
+              />
+            </div>
+            <div class="c-kharkova-form__group">
+              <label id="number-label" for="number">Возраст</label>
+              <input
+                class="c-kharkova-form__item"
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                placeholder="Возраст"
+                required
+              />
+            </div>
+            <div class="c-kharkova-form__group">
+              <p>Пол</p>
+              <label>
+                <input
+                  name="gender"
+                  value="male"
+                  type="radio"
+                  class="input-radio"
+                />Мужской</label
+              >
+              <label>
+                <input
+                  name="gender"
+                  value="female"
+                  type="radio"
+                  class="input-radio"
+                />Женский</label
+              >
+            </div>
+            <div class="c-kharkova-form__group">
+              <label id="country-label" for="country">Страна</label>
+              <input
+                class="c-kharkova-form__item"
+                type="country"
+                name="country"
+                id="country"
+                placeholder="Место проживания"
+                required
+              />
+            </div>
+            <div class="c-kharkova-form__group">
+              <label id="email-label" for="email"
+                >Email<span class="clue">(не обязательно)</span></label
+              >
+              <input
+                class="c-kharkova-form__item"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Введите адрес электронной почты"
+                required
+              />
+            </div>
+            <div class="c-kharkova-form__group">
+              <p>Вы предпочитаете есть</p>
+              <select
+                class="c-kharkova-form__item"
+                id="dropdown"
+                name="foodType"
+                required
+              >
+                <option disabled selected value>Ваша любимая еда</option>
+                <option value="homemade">Еда домашнего приготовления</option>
+                <option value="packaged">Полуфабрикаты</option>
+                <option value="restaurant">Еда из ресторана</option>
+                <option value="fastFood">Фастфуд</option>
+                <option value="other">Другое</option>
+              </select>
+            </div>
+            <div class="c-kharkova-form__group">
+              <p>
+                Еда, которая всегда в вашем рационе
+                <span class="clue">(Выберите все подходящие варианты)</span>
+              </p>
+
+              <label
+                ><input
+                  name="ration"
+                  value="fruits"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Фрукты</label
+              >
+              <label>
+                <input
+                  name="ration"
+                  value="vegetables"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Овощи</label
+              >
+              <label
+                ><input
+                  name="ration"
+                  value="grains"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Злаки</label
+              >
+              <label
+                ><input
+                  name="ration"
+                  value="dairy"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Молочные продукты</label
+              >
+              <label
+                ><input
+                  name="ration"
+                  value="meat"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Мясо</label
+              >
+              <label
+                ><input
+                  name="ration"
+                  value="fish"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Рыба</label
+              >
+              <label
+                ><input
+                  name="ration"
+                  value="candies"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Конфеты</label
+              >
+              <label
+                ><input
+                  name="ration"
+                  value="chocolate"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Шоколад</label
+              >
+              <label
+                ><input
+                  name="ration"
+                  value="coffee"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Кофе</label
+              >
+              <label
+                ><input
+                  name="ration"
+                  value="hamburgers"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Гамбургеры</label
+              >
+              <label
+                ><input
+                  name="ration"
+                  value="fried"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Чипсы</label
+              >
+            </div>
+            <div class="c-kharkova-form__group">
+              <p>У вас есть аллергия на какие-то продукты?</p>
+              <label>
+                <input
+                  name="allergic"
+                  value="yes"
+                  type="radio"
+                  class="input-radio"
+                />Да</label
+              >
+              <label>
+                <input
+                  name="allergic"
+                  value="no"
+                  type="radio"
+                  class="input-radio"
+                />Нет</label
+              >
+            </div>
+            <div class="c-kharkova-form__group">
+              <p>Как вы бы объяснили выражение "разборчивость в еде"?</p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Оставьте свой комментарий..."
+              ></textarea>
+            </div>
+
+            <div class="c-kharkova-form__group">
+              <button type="submit" id="submit" class="submit-button">
+                Отправить
+              </button>
+            </div>
+          </form>
+          <!-- End of Form -->
         </div>
       </div>
     </div>
+    <a href="../index.html" class="den-content-bottom-info__link">Back to site</a>
   </body>
 </html>
