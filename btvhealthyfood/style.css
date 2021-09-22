@@ -58,3 +58,31 @@ body {
     height: 298px;
   }
 }
+.content-info__link {
+	height: 44px;
+	display: inline-block;
+	line-height: 44px;
+	padding: 0px 30px;
+	border-radius: 24px;
+	background-color:#4e925f;
+	-webkit-box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 5px 1px rgba(0, 0, 0,0.5);
+	color: #ffffff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	text-decoration: none;
+}
+.content-info__link span{
+	padding: 0px;
+
+}
+.content-info__link:hover{
+	background-color:#233f1f;
+}
+.content-info__link:active{
+	position: relative;
+	top: 3px;
+	-webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 2px 1px rgba(0, 0, 0,0.5);
+}

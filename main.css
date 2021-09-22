@@ -35,7 +35,6 @@ p {
 
 body {
   font-family: "GT America", sans serif;
-  background-color: #60a631;
 }
 /* Header */
 .c-header {
@@ -96,19 +95,47 @@ body {
 }
 
 /* Parallax effect */
-.parallax {
+.c-banner {
   background-image: url(./images/parallax.jpg);
   height: 800px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; 
 }
 
+ .c-banner__title {
+  color: #fff;
+  font-family: 'Orpheus Pro', serif;
+  font-size: 200px;
+  text-align: center;
+  display: flex;
+  padding-top: 10%;
+}
+ @media (max-width: 900px) {
+  .c-banner__title {
+  font-size: 90px;
+  }
+  } 
+/* .c-banner__title {
+    position: absolute;
+    font-family: "Orpheus Pro", serif;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0px;
+    line-height: 65px;
+    color: white;
+    z-index: 20;
+    padding: 0 50px;
+    top: 30%;
+  }  */
 /* Kharkova section */
 .c-kharkova-social {
   position: relative;
 }
+
 .c-kharkova-social__title {
   position: absolute;
   font-family: "Orpheus Pro", serif;
@@ -120,9 +147,10 @@ body {
   line-height: 65px;
   color: white;
   z-index: 20;
-  top: 10%;
+  top: 30%;
   padding: 0 50px;
 }
+
 .c-kharkova-social__image {
   position: relative;
 }
@@ -142,24 +170,25 @@ body {
 
 .c-kharkova-social__links {
   position: absolute;
-  max-width: 935px;
+  max-width: 740px;
   margin: 0 auto;
   width: 100%;
-  bottom: 15%;
-  left: 15%;
+  bottom: 40%;
+  left: 21%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  justify-content: center;
   z-index: 20;
 }
 
 .c-kharkova-social__item {
-  padding: 0 65px;
+  padding: 0 20px;
   margin-bottom: 50px;
 }
 .c-kharkova-social__item img {
-  width: 180px;
-  height: 55px;
+  width: 100px;
+  height: 30px;
 }
+
 /* End of Kharkova section */
 /* ===================================================================================== */

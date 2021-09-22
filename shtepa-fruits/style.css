@@ -13,20 +13,22 @@ body {
 /* Стилі текстів */
 h1 {
   font-size: 45px;
-  line-height: 27px;
   color: #262626;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 30px;
+  margin: 20px 0;
 }
 p {
-  padding: 30px 30px 1px 30px;
+  padding: 20px;
   display: flex;
   width: 100%;
   text-align: center;
+  font-size: 20px;
+  background-color:rgba(255, 255, 255, 0.5);
+
 }
 /* На головну */
 .den-content-bottom-info__link:hover {
@@ -118,6 +120,35 @@ p {
 }
 .wrapper__card:hover .back {
   transform: rotateY(360deg);
+}
+.content-bottom-info__link {
+	height: 44px;
+	display: inline-block;
+	line-height: 44px;
+	padding: 0px 30px;
+	border-radius: 24px;
+	background-color:#4e925f;
+	-webkit-box-shadow: 0px 5px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 5px 1px rgba(0, 0, 0,0.5);
+	color: #ffffff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	text-decoration: none;
+  margin: 20px;
+}
+.content-bottom-info__link span{
+	padding: 0px;
+
+}
+.content-bottom-info__link:hover{
+	background-color:#233f1f;
+}
+.content-bottom-info__link:active{
+	position: relative;
+	top: 3px;
+	-webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 2px 1px rgba(0, 0, 0,0.5);
 }
 /* Footer */
 footer {
