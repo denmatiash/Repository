@@ -83,14 +83,40 @@ p {
   justify-content: center;
   margin-top: 55px;
 }
+
 .wrapper__card {
   display: flex;
-  width: 300px;
+  width: 295px;
   height: 300px;
   position: relative;
   perspective: 1000px;
   /* border: 1px solid #fff; */
+  
 }
+
+@media (max-width: 910px) {
+  .wrapper__card {
+    width: 230px;
+  }
+}
+
+@media (max-width: 900px) {
+  .wrapper__card {
+    width: 230px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper__card {
+    width: 158px;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper__card {
+    width: 105px;
+  }
+}
+
 .wrapper__front,
 .back {
   display: flex;

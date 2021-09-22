@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container container--collapse">
       <div class="c-main">
         <div class="c-main__wrapper">
           <div class="c-header">
@@ -30,7 +30,9 @@
                   />
                 </div>
               </div>
+              <div class="c-header__openbtn" onclick="openNav()"><span class="e-burger-sign"></span></div>
               <nav class="c-navbar">
+                <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">×</a>
                 <div class="c-navbar__wrapper">
                   <ul class="c-navbar__menu">
                     <li><a href="./index.html">Главная</a></li>
@@ -127,5 +129,6 @@
         </div>
       </footer>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -54,8 +54,15 @@ body {
 
 @media (max-width: 783px) {
   .imagefood {
-    width: 494px;
+    width: 440px;
     height: 298px;
+  }
+}
+
+@media (max-width: 500px) {
+  .imagefood {
+    width: 295px;
+    height: 200px;
   }
 }
 .content-info__link {
